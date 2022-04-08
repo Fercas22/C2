@@ -15,9 +15,7 @@ class Mutacion():
                 # print(cru[i].name, cru[i].genotipoX, cru[i].genotipoY)
                 self.mutacionX(cru[i].genotipoX, cromosomaInd)
                 self.mutacionY(cru[i].genotipoY, cromosomaInd)
-                # print(cru[i].name, cru[i].genotipoX, cru[i].genotipoY)
-            # print(cru[i].name, cru[i].genotipoX, cru[i].genotipoY)
-            # Generar los decimales para los nuevos individuos
+              
             deciX = self.decimalX(cru[i].genotipoX)
             deciY = self.decimalY(cru[i].genotipoY)
             # print(cru[i].name, deciX, deciY)
@@ -29,8 +27,6 @@ class Mutacion():
                 # print(cru[i].name, deciX, deciY, fenoX, fenoY)
                 # Validar que los fenotipos sean mayor a 0 para que no sean indefinidos
                 if fenoX > 0 and fenoY > 0:
-                    # - x**3 ln y + 4xy - 2y**2 ln x +1
-                    aptitud = (-(fenoX**3)) * (math.log(fenoY)) + (4 * fenoX * fenoY) - (2*(fenoY**2)) * math.log(fenoX) + 1
                     ind = Individual(cru[i].name, cru[i].genotipoX, cru[i].genotipoY, deciX, deciY, fenoX, fenoY, aptitud)
                     individualNew.append(ind)
                     # print('id =', individualNew[i].name, 'X =', individualNew[i].genotipoX, 'iX =', individualNew[i].iX, 'fenotipoX =', individualNew[i].fenotipoX, 'Y =', individualNew[i].genotipoY, 'iY =', individualNew[i].iY, 'fenotipoY =', individualNew[i].fenotipoY, 'Aptitud =', individualNew[i].aptitud)

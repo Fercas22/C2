@@ -1,12 +1,11 @@
 import math
 from optparse import BadOptionError
 import random
-from re import I
 from cruza import *
 from individuoData import *
 from metodosIndividuo import *
 from mutacion import *
-from grafGeneSinPoda import *
+# from grafGeneSinPoda import *
 import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.lines as mlines
@@ -102,10 +101,10 @@ def main(initialPopulation, populationLimit, intervalX, intervalY, mutationIndiv
             print(generacionSinPoda[j][1][k].name)
 
     print("Llega a la grafica de genaracion sin poda")
-    graficaGeneracionSinPoda(generacionSinPoda, intervalX, intervalY)
+    # graficaGeneracionSinPoda(generacionSinPoda, intervalX, intervalY)
     # convertToVideo(pathIn, pathOut, fps, time)
     print("Llega a convertir video")
-    convertToVideo()
+    # convertToVideo()
     grafica(generacion)
     # print(generacionMejor)
     # print(generacionPeor)

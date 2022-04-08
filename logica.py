@@ -14,10 +14,11 @@ def readCsv():
         price.append(float(data['PRECIO'][i]))
     print(name, km, price)
 
-def proceso():
+def proceso(areaCubrir, populationLimit):
     # name = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ñ', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    areaCubrir
     initialPopulation = 15 #Comentar
-    populationLimit = 20 #Comentar
+    populationLimit #Comentar
     mutationIndividual = random.uniform(0.0, 0.9) #Comentar
     chromosomeMutation = random.uniform(0.0, 0.09) #Comentar
     resolution = random.uniform(0.0, 0.09) #Comentar
