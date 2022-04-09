@@ -1,5 +1,5 @@
 import random
-from individuoData import *
+from datosAntena import *
 from metodosIndividuo import *
 
 class Mutacion():

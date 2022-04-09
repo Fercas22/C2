@@ -34,10 +34,6 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
 
             lg.proceso(area, limiteP)
 
-
-
-
-
     def getValues(self):
         area = self.areaCubrir.text()
         limitePoblacion = self.limitePoblacion.text()

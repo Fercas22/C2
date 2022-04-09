@@ -1,5 +1,5 @@
 import random
-from individuoData import IndividuoCruza
+from datosAntena import IndividuoCruza
 
 class Cruza():
 
