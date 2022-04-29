@@ -7,9 +7,7 @@ class MetodosIndividuo():
     def randonBits(self, a):
         contadorBits = ''
         arrayBits = []
-
-
-        # Comentario de prueba
+        # Eliminar comentario de prueba
         decimal = 0
         arrayReturn = []
         for i in range(0, a):
