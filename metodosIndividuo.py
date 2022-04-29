@@ -3,10 +3,13 @@ import random
 
 class MetodosIndividuo():
 
-    # Arreglo de bits para X y Y con su valor en decimal
+    # Arreglo de bits para X y Y con su valor en decimal as
     def randonBits(self, a):
         contadorBits = ''
         arrayBits = []
+
+
+        # Comentario de prueba
         decimal = 0
         arrayReturn = []
         for i in range(0, a):
